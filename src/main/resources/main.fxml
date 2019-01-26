@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane minHeight="480.0" minWidth="480.0" prefHeight="640.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Controller">
+    <children>
+        <TableView fx:id="table" layoutX="53.0" layoutY="73.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+            <columns>
+                <TableColumn fx:id="code" minWidth="79.0" prefWidth="79.0" text="Код" />
+                <TableColumn fx:id="title" minWidth="246.0" prefWidth="246.0" text="Название" />
+            <TableColumn fx:id="value" minWidth="99.0" prefWidth="145.0" text="Курс" />
+            <TableColumn fx:id="symbolCode" minWidth="99.0" prefWidth="99.0" text="Буквенный код" />
+            <TableColumn fx:id="date" minWidth="99.0" prefWidth="99.0" text="Дата и время" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+        <TextField fx:id="textField" layoutX="14.0" layoutY="8.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" promptText="Введите название, код или буквенный код валюты" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+    </children>
+</AnchorPane>
